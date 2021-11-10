@@ -1,0 +1,59 @@
+@import url("reset.css");
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  padding: 1rem;
+  width: 100%;
+  .search {
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.pokemon_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  .pokemon {
+    background-color: #fff;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 200ms transform;
+    &:hover {
+      transform: scale(1.01);
+    }
+    .img {
+      width: 150px;
+      height: 150px;
+      filter: drop-shadow(5px 5px 5px #222);
+    }
+    .name {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+    .exp {
+      margin-bottom: 1rem;
+    }
+  }
+}
